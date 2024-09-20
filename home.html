@@ -32,23 +32,26 @@
                     <div class="divider"></div>
                     <div>
                         <h1 class="text-3xl font-bold text-center">Add Money</h1>
-                        <form class="card-body">
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Add Money</span>
-                                </label>
-                                <input type="text" placeholder="Add Amount" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Pin</span>
-                                </label>
-                                <input type="password" placeholder="Pin" class="input input-bordered" autocomplete="off" required />
-                            </div>
-                            <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
-                            </div>
-                        </form>
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="input-add-money" type="text" placeholder="Amount" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin</span>
+                                    </label>
+                                    <input id="add-pin-number" type="password" placeholder="Pin number" class="input input-bordered"
+                                        autocomplete="off" required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="add-event-listener" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
